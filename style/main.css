@@ -1,0 +1,45 @@
+body {
+    background: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    border-radius: 1%;
+    border: solid 2px #888;
+    background: silver;
+    overflow: hidden;
+    position: relative;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+canvas {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+#main {
+    z-index: 2;
+}
+
+#back {
+    z-index: 0;
+    background-size: 800px 600px;
+}

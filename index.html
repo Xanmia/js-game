@@ -12,10 +12,17 @@
 </head>
 
 <body>
+    <script>var $ = {};</script>
 
-    <canvas id="main"></canvas>
+    <div id="container">
+        <canvas id="back"></canvas>
+        <canvas id="main"></canvas>
+    </div>
 
     <!-- build:js -->
+    <script src="src/utils.js"></script>
+    <script src="src/entities/player.js"></script>
+    <script src="src/states/play.js"></script>
     <script src="src/game.js"></script>
     <!-- endbuild -->
 </body>
