@@ -15,7 +15,7 @@ $.down = 40
 $.right = 39;
 
 $.W = Math.min(window.innerWidth, 800);
-$.H = Math.min(window.innerHeight, 600);
+$.H = Math.min(window.innerHeight, 800);
 
 $.setup = function () {
     $.main = document.getElementById('main');
@@ -36,7 +36,9 @@ $.setup = function () {
     window.addEventListener('keyup', $.keyup, false);
     $.updateDelta();
 
-    // $.state = new $.play();
+    $.state = new $.play();
+    $.loop();
+
 
     //$.loadImages();
 }

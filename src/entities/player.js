@@ -1,8 +1,8 @@
 $.player = function () {
-    this.x = 0;
-    this.y = 0;
     this.w = 25;
     this.h = 25;
+    this.x = (($.W - (this.w / 2)) / 2);
+    this.y = (($.H - (this.h / 2)) / 2);
     this.velocityX = 0;
     this.velocityY = 0;
     var lateralMovement = .2;
@@ -22,6 +22,9 @@ $.player = function () {
     }
 
     this.render = function () {
-
+        $.mainctx.beginPath();
+        $.mainctx.strokeStyle = "rgba(0, 100, 0, 0.6)";
+        $.mainctx.fillRect(this.x, this.y, this.w, this.h);
+        $.mainctx.closePath();
     }
 }
