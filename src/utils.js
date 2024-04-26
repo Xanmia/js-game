@@ -29,15 +29,6 @@ $.util.rectInRect = function (r1, r2) {
         r2.y + r2.h < r1.y);
 };
 
-$.util.range = function (n, r) {
-    if (n < 0) {
-        return Math.max(n, -r);
-    }
-    else if (n > 0) {
-        return Math.min(n, r);
-    }
-}
-
 $.util.pickRandomFromObject = function (obj) {
     var keys = Object.keys(obj);
     return obj[keys[keys.length * Math.random() << 0]];
