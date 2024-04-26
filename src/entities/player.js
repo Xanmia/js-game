@@ -23,7 +23,7 @@ $.player = function () {
 
     this.render = function () {
         $.mainctx.beginPath();
-        $.mainctx.strokeStyle = "rgba(0, 100, 0, 0.6)";
+        $.mainctx.fillStyle = "rgba(0, 100, 200, 1.0)";
         $.mainctx.fillRect(this.x, this.y, this.w, this.h);
         $.mainctx.closePath();
     }
